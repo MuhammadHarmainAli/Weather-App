@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="weather-app">
+      <!-- =====================================
+         HEADER
+    ====================================== -->
+
+      <header class="header">
+        <div class="brand">
+          <div class="brand-icon">🌤️</div>
+
+          <div>
+            <h1>Weatherly</h1>
+            <p>Weather at a glance</p>
+          </div>
+        </div>
+
+        <div class="header-location">
+          <span class="location-icon">📍</span>
+
+          <div>
+            <span class="location-label"> Your Location </span>
+
+            <strong id="location"> Karachi, Pakistan </strong>
+          </div>
+        </div>
+      </header>
+
+      <!-- =====================================
+         SEARCH
+    ====================================== -->
+
+      <section class="search-section">
+        <div class="search-box">
+          <span class="search-icon"> 🔍 </span>
+
+          <input
+            type="text"
+            id="cityInput"
+            placeholder="Search for a city..."
+            autocomplete="off"
+          />
+
+          <button type="button" id="searchBtn">Search</button>
+        </div>
+      </section>
+
+      <!-- =====================================
+         MAIN WEATHER CARD
+    ====================================== -->
+
+      <section class="current-weather">
+        <!-- Decorative Elements -->
+
+        <div class="weather-circle circle-one"></div>
+        <div class="weather-circle circle-two"></div>
+
+        <!-- Weather Information -->
+
+        <div class="weather-info">
+          <span class="weather-label"> CURRENT WEATHER </span>
+
+          <h2 id="cityName">Karachi</h2>
+
+          <div class="temperature">
+            <span id="temperature"> 32 </span>
+
+            <span class="temperature-unit"> °C </span>
+          </div>
+
+          <p class="condition" id="condition">Sunny</p>
+
+          <p class="feels-like">
+            Feels like
+            <strong id="feelsLike"> 35°C </strong>
+          </p>
+        </div>
+
+        <!-- Weather Illustration -->
+
+        <div class="weather-visual">
+          <div class="sun">☀️</div>
+
+          <div class="cloud cloud-one">☁️</div>
+
+          <div class="cloud cloud-two">☁️</div>
+        </div>
+      </section>
+
+      <!-- =====================================
+         WEATHER DETAILS
+    ====================================== -->
+
+      <section class="details-grid">
+        <!-- Humidity -->
+
+        <article class="detail-card">
+          <div class="detail-icon humidity-icon">💧</div>
+
+          <div class="detail-content">
+            <span> Humidity </span>
+
+            <strong id="humidity"> 65% </strong>
+          </div>
+        </article>
+
+        <!-- Wind -->
+
+        <article class="detail-card">
+          <div class="detail-icon wind-icon">💨</div>
+
+          <div class="detail-content">
+            <span> Wind Speed </span>
+
+            <strong id="wind"> 18 km/h </strong>
+          </div>
+        </article>
+
+        <!-- Visibility -->
+
+        <article class="detail-card">
+          <div class="detail-icon visibility-icon">👁️</div>
+
+          <div class="detail-content">
+            <span> Visibility </span>
+
+            <strong id="visibility"> 10 km </strong>
+          </div>
+        </article>
+
+        <!-- Pressure -->
+
+        <article class="detail-card">
+          <div class="detail-icon pressure-icon">🌡️</div>
+
+          <div class="detail-content">
+            <span> Pressure </span>
+
+            <strong id="pressure"> 1012 hPa </strong>
+          </div>
+        </article>
+      </section>
+
+      <!-- =====================================
+         FORECAST
+    ====================================== -->
+
+      <section class="forecast-section">
+        <div class="section-heading">
+          <div>
+            <span> WEATHER FORECAST </span>
+
+            <h3>Next 5 Days</h3>
+          </div>
+
+          <div class="forecast-status">Updated just now</div>
+        </div>
+
+        <!-- Forecast Cards -->
+
+        <div class="forecast-grid">
+          <!-- Day 1 -->
+
+          <article class="forecast-card">
+            <div class="forecast-day">Today</div>
+
+            <div class="forecast-icon">☀️</div>
+
+            <div class="forecast-temperature">32°</div>
+
+            <div class="forecast-condition">Sunny</div>
+
+            <div class="temperature-range">
+              <span>26°</span>
+              <span>32°</span>
+            </div>
+          </article>
+
+          <!-- Day 2 -->
+
+          <article class="forecast-card">
+            <div class="forecast-day">Tue</div>
+
+            <div class="forecast-icon">🌤️</div>
+
+            <div class="forecast-temperature">31°</div>
+
+            <div class="forecast-condition">Partly Cloudy</div>
+
+            <div class="temperature-range">
+              <span>25°</span>
+              <span>31°</span>
+            </div>
+          </article>
+
+          <!-- Day 3 -->
+
+          <article class="forecast-card">
+            <div class="forecast-day">Wed</div>
+
+            <div class="forecast-icon">🌧️</div>
+
+            <div class="forecast-temperature">29°</div>
+
+            <div class="forecast-condition">Rainy</div>
+
+            <div class="temperature-range">
+              <span>24°</span>
+              <span>29°</span>
+            </div>
+          </article>
+
+          <!-- Day 4 -->
+
+          <article class="forecast-card">
+            <div class="forecast-day">Thu</div>
+
+            <div class="forecast-icon">⛅</div>
+
+            <div class="forecast-temperature">30°</div>
+
+            <div class="forecast-condition">Cloudy</div>
+
+            <div class="temperature-range">
+              <span>25°</span>
+              <span>30°</span>
+            </div>
+          </article>
+
+          <!-- Day 5 -->
+
+          <article class="forecast-card">
+            <div class="forecast-day">Fri</div>
+
+            <div class="forecast-icon">☀️</div>
+
+            <div class="forecast-temperature">33°</div>
+
+            <div class="forecast-condition">Sunny</div>
+
+            <div class="temperature-range">
+              <span>27°</span>
+              <span>33°</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- =====================================
+         ERROR MESSAGE
+    ====================================== -->
+
+      <p class="error-message" id="errorMessage"></p>
+
+      <!-- =====================================
+         LOADING
+    ====================================== -->
+
+      <div class="loading" id="loading">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </main>
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

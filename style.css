@@ -14,8 +14,8 @@
 ========================================= */
 
 :root {
-  --bg: #fff7f2;
-  --surface: rgba(255, 255, 255, 0.88);
+  --bg: #141414;
+  --surface: rgba(36, 36, 36, 0.88);
 
   --red: #ff3d2e;
   --orange: #ff7a00;
@@ -28,8 +28,8 @@
     #ff9d00 100%
   );
 
-  --text: #241b1a;
-  --muted: #8c7771;
+  --text: #ffffff;
+  --muted: #e7d6d1;
 
   --border: rgba(255, 100, 50, 0.14);
 
@@ -854,8 +854,8 @@ body {
   background:
     linear-gradient(
       180deg,
-      rgba(255, 249, 245, 0.95),
-      rgba(255, 255, 255, 0.85)
+      #ff7a00,
+      #ff9d00
     );
 
   border: 1px solid var(--border);
@@ -954,7 +954,7 @@ body {
 
   justify-content: space-between;
 
-  color: #b09b94;
+  color: #3b3938;
 
   font-size: 9px;
 }
